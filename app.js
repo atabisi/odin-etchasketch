@@ -2,6 +2,7 @@
 const grid = document.querySelector('#grid')
 const sizebtn = document.querySelector("#sizebtn")
 const resetbtn = document.querySelector("#reset")
+const slider = document.querySelector("#slider")
 let cols = 16
 let rows = 16
 let gridsize = 600
@@ -28,9 +29,9 @@ sizebtn.addEventListener('click', function () {
     while (grid.firstChild) {
         grid.removeChild(grid.firstChild)
     }
-    cols = parseInt(prompt("Type the desired Grid Size (between 1-100)", 16))
+    cols = parseInt(prompt("Type the desired Grid Size (between 1-100)", 100))
     if (cols > 100 || cols < 1) {
-        cols = parseInt(prompt("Grid Size should be between 1 and 100 cells", 16))
+        cols = parseInt(prompt("Grid Size should be between 1 and 100 cells", 100))
     }
     rows = cols
     createGrid()
@@ -43,7 +44,14 @@ resetbtn.addEventListener('click', function () {
     createGrid()
 })
 
-
+slider.addEventListener('change', function () {
+    cols = parseInt(this.value);
+    rows = cols;
+    while (grid.firstChild) {
+        grid.removeChild(grid.firstChild)
+    }
+    createGrid()
+})
 
 
 
