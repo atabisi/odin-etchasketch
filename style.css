@@ -1,6 +1,7 @@
 body {
     text-align: center;
     background-color: #d6ccc2;
+    font-family: 'Short Stack', sans-serif;
 }
 
 .square {
@@ -18,4 +19,13 @@ body {
     border: solid 1px #edede9;
     text-align: center;
     margin: 50px auto;
+}
+
+button {
+    font-family: 'Short Stack', sans-serif;
+    background-color: #d5bdaf;
+    border: solid 2px #e3d5ca;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 160px;
 }
