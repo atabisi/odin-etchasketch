@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    background-color: #d6ccc2;
+}
+
+.square {
+    border: solid 1px #edede9;
+    background-color: white;
+}
+
+/* .square:hover {
+    background-color: black;
+} */
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px #edede9;
+    text-align: center;
+    margin: 50px auto;
+}
